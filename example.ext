@@ -1,8 +1,5 @@
 a = 3;
 b = a+2;
 c = a+b;
-d = c+5;
 print c;
-print d;
-print a;
 
