@@ -1,5 +1,0 @@
-a = 3;
-b = a+4;
-c = a+b;
-print c;
-print b;
