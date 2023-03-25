@@ -1,12 +1,8 @@
-calc: lex.yy.c y.tab.c
-	gcc -g lex.yy.c y.tab.c -o calc
+core: core.l
+	lex core.l
+	gcc -o core lex.yy.c -ll
+	./core < example.core
+	
 
-lex.yy.c: y.tab.c calc.l
-	lex calc.l
-
-y.tab.c: calc.y
-	yacc -d calc.y
-
-clean: 
-	rm -rf lex.yy.c y.tab.c y.tab.h calc calc.dSYM
-
+clean:
+	rm core lex.yy.c
