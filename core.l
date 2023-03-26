@@ -15,15 +15,9 @@ final const
 func func
 void empty
 
-comment  \(\*.*\n*\*\)
+comment  \(\*(.|\n)*?\*\)
 
-left_parent [\(]
-right_parent [\)]
-lower_letter [a-z]
-upper_letter [A-Z]
-alphabetic ({lower_letter}|{upper_letter}|$|_)
-character ([0-9]|{alphabetic})
-variableid {alphabetic}+{character}*
+var [a-zA-Z_$][a-zA-Z0-9_'$]*
 
 
 %%
