@@ -85,8 +85,3 @@ In general, we have a ready-made sample program file that contains programs simi
 \<var\> : CONST | VARIABLE
 
 ```
-
-### Explanations:
-
-- Takes a file with extension .core
-- Has if, while, ...
