@@ -95,12 +95,3 @@ if (firstNumber != secondNumber and firstNumber != thirdNumber and secondNumber 
 } else {
     print("There are two numbers that are equal");
 }
-
-
-
-
-
-
-
-
-
