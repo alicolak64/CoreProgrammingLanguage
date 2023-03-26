@@ -64,8 +64,6 @@ FINISH
 
 RUN
 
-(* This is a program that checks equality of 3 numbers *)
-
 intel firstNumber = 5;
 intel secondNumber = 6;
 intel thirdNumber = 7;
