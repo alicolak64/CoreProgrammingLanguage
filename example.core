@@ -1,4 +1,19 @@
-123
-abc
-012
+RUN
 
+(* This is a basic program has a sum function 
+to sum two variables and print them*)
+
+intel i = 5;
+float j = 6;
+
+print(x);
+
+float z = sum(i,j);
+
+print(z);
+
+func float sum(intel first,float second) {
+    return first + second;
+}
+
+FINISH
