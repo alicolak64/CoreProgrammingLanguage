@@ -32,7 +32,7 @@ while(i <= 10){
         print(i + odd);
     }
 
-    i++;
+    i = i + 1;
 }
 
 func flag isEven(intel x) {
@@ -40,4 +40,67 @@ func flag isEven(intel x) {
 }
 
 FINISH
+
+RUN 
+
+char c = 'a';
+
+const intel MAX = 10;
+
+while(c <= 'z') {
+    print(c);
+    c = c + 1;
+}
+
+FINISH
+
+RUN
+
+text name = "John";
+
+print("Hello " + name);
+
+FINISH
+
+RUN
+
+(* This is a program that checks equality of 3 numbers *)
+
+intel firstNumber = 5;
+intel secondNumber = 6;
+intel thirdNumber = 7;
+
+if (firstNumber > secondNumber and firstNumber > thirdNumber) {
+    print(firstNumber);
+} elif (secondNumber > firstNumber and secondNumber > thirdNumber) {
+    print(secondNumber);
+} else {
+    print(thirdNumber);
+}
+
+text fileName = "output.txt";
+
+if ( firstNumber == secondNumber or firstNumber == thirdNumber or secondNumber == thirdNumber) {
+    writeFile(fileName,"There are two numbers that are equal");
+} elif (firstNumber == secondNumber and firstNumber == thirdNumber and secondNumber == thirdNumber) {
+    writeFile(fileName,"All numbers are equal");
+} else {
+    writeFile(fileName,"All numbers are different");
+}
+
+if (firstNumber != secondNumber and firstNumber != thirdNumber and secondNumber != thirdNumber) {
+    print("All numbers are different");
+} elif (firstNumber == secondNumber and firstNumber == thirdNumber and secondNumber == thirdNumber) {
+    print("All numbers are equal");
+} else {
+    print("There are two numbers that are equal");
+}
+
+
+
+
+
+
+
+
 
