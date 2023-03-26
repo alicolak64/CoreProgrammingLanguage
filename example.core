@@ -17,3 +17,27 @@ func float sum(intel first,float second) {
 }
 
 FINISH
+
+
+RUN
+
+intel i = 0;
+text even = " is even";
+text odd = " is odd";
+
+while(i <= 10){
+    if(isEven(i)) {
+        print(i + even);
+    }else{
+        print(i + odd);
+    }
+
+    i++;
+}
+
+func flag isEven(intel x) {
+    return x mod 2 == 0;
+}
+
+FINISH
+
