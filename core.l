@@ -49,6 +49,7 @@ mod                     printf(" MOD_OP ");
 \<                      printf(" SMALLER_OP ");
 \>=                     printf(" GREATER_OR_EQUAL_OP ");
 \<=                     printf(" SMALLER_OR_EQUAL_OP ");
+\!                      printf(" NOT_OP ");
 if                      printf(" IF_STMT ");
 else                    printf(" ELSE_STMT ");
 elif                    printf(" ELSE_IF_STMT ");
