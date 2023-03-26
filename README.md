@@ -1,35 +1,21 @@
-# pl-yacc-starter-kit
+# "Core" Programming Language
 
-This is a logic language which allows only conjunction and printing the result.
+*Group Members*:
+- [Ali Çolak](https://github.com/alicolak64)
+- [İsmail Şengül](https://github.com/ismailsengul)
+- [Emre Eldemir](https://github.com/emreeldemir)
 
-\<program\> : \<stmts\>
+---
 
-\<stmts\> : \<stmt\>
-	| \<stmt\> ; \<stmts\>
+### Description:
 
-\<stmt\> : print \<expr\>;
-	| \<assign\>;
+In the world of computer programming, we are a group of brilliant young developers who are frustrated with the limitations of existing programming languages. We wanted to create a simple, elegant and powerful language that would allow us to express our ideas in an efficient and intuitive way.
 
-\<assign\> : \<lhs\> = \<rhs\>;
+So, we set out to create our own programming language, spending countless hours brainstorming, coding, testing, and refining our creation. We call it **"Core"** with the **".core"** extension.
 
-\<lhs\> : \<var\>
+The name "Core" was not chosen lightly. It is a nod to the heart of computing, the central processing unit (CPU), which is often referred to as the "core" of a computer. The CPU is responsible for executing instructions and performing calculations at the heart of every computer system.
 
-\<rhs\> : \<var\>
-	| \<expr\>
+We see our language, Core, as a kind of "core" for programming. It is designed to be the foundation upon which all other software can be built. It is meant to be simple enough for beginners to learn.
 
-\<var\> : [a-zA-Z][a-zA-Z0-9_]*
+---
 
-\<expr\> : \<expr\> 
-	| \<expr\> and \<expr\>
-	| ( \<expr\> and \<expr\> )
-
-
-## Running instructions:
-
-> make
-
-> ./calc < example.ext
-
-...(some output)...
-
-> make clean
