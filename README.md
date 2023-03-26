@@ -49,9 +49,42 @@ In general, we have a ready-made sample program file that contains programs simi
 
 ### Syntax:
 
+```
+
 \<prog\> : \<stmt\> | \<stmts\>
 
-\<stmt\> : \<expr\> ...
+\<stmts\> : \<stmt\> | \<stmt\> ; \<stmts\>
+
+\<stmt\> : \<expr\> | <if_stmt> | <while_loop> | <for_loop> | <print> | <func> | <IO_stmt> | <assignment>
+
+\<if_stmt\> :  IF_STMT OPEN_PARANTHESIS <expr> CLOSE_PARANTHESIS OPEN_CURLY <stmts> CLOSE_CURLY 
+               {ELSE_IF_STMT OPEN_PARANTHESIS <expr> CLOSE_PARANTHESIS OPEN_CURLY <stmts> CLOSE_CURLY} 
+               {ELSE_STMT OPEN_PARANTHESIS <expr> CLOSE_PARANTHESIS OPEN_CURLY <stmts> CLOSE_CURLY }
+  
+\<while_loop\> :  WHILE_LOOP OPEN_PARANTHESIS <logic_expr> CLOSE_PARANTHESIS OPEN_CURLY <stmts> CLOSE_CURLY
+  
+\<for_loop\> : FOR_LOOP OPEN_PARANTHESIS <type> VARIABLE : VARIABLE CLOSE_PARANTHESIS OPEN_CURLY <stmts> CLOSE_CURLY
+  
+\<type\> : INT_TYPE | FLOAT_TYPE | STRING_TYPE | BOOLEAN_TYPE | CHAR_TYPE | CONSTANT | VOID_TYPE
+
+\<exp\> : <expr> - <term> | <expr> + <term> | <term>
+  
+\<logic_exp\> : <term> EQUALITY_CHECK <term> | <term> NOT_EQUAL_CHECK <term> | <term> 'AND_OP' <term> | <term> 'OR_OP' <term>
+                | <term> 'SMALLER_OP' <term> | <term> GREATER_OR_EQUAL_OP <term> | <term> SMALLER_OR_EQUAL_OP <term> | NOT_OP <term>
+  
+\<term\> : <term> / CONSTANT | <term> * CONSTANT | CONSTANT
+  
+\<print\> : PRINT OPEN_PARENTHESIS <expr> CLOSE_PARENTHESIS
+
+\<func\> : FUNCTION <type> <variable> OPEN_PARENTHESIS {<type> <variable> | <type> <variable> , [<type> <variable>]+ } CLOSE_PARENTHESIS
+
+\<IO_stmt\> : IO_OP OPEN_PARENTHESIS VARIABLE VARIABLE CLOSE_PARENTHESIS
+
+\<assignment\> : <type> <variable> EQUAL_SIGN <variable>  
+
+\<var\> : CONST | VARIABLE
+
+```
 
 ### Explanations:
 
