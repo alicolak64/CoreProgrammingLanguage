@@ -25,3 +25,35 @@ While designing our language, we got help and inspiration from many languages su
 We have defined a data type that we will use for numeric data with INT_TYPE and named it **"intel"**. We have carefully and in detail prepared the language syntax definition and the expressions that will appear on the printouts. We created our comment line style inspired by **"SML/NJ"**. (* comment block/line *)
 
 ---
+
+First, we test a function that sums the values of two variables of the "float" and "intel" data types. The function returns "float" as its return value.
+
+Our second program checks the numbers from 0 to 10 in a loop and prints the result according to their odd and even condition.
+
+In another program, we check whether the 3 numbers are equal to each other.
+
+In general, we have a ready-made sample program file that contains programs similar to the ones we have written, where you can check many syntax cases.
+
+<br>
+
+
+### Running Instructions:
+
+> make core
+
+> ./core < example.core
+
+...( some output )...
+
+> make clean
+
+### Syntax:
+
+\<prog\> : \<stmt\> | \<stmts\>
+
+\<stmt\> : \<expr\> ...
+
+### Explanations:
+
+- Takes a file with extension .core
+- Has if, while, ...
