@@ -26,7 +26,7 @@ We have defined a data type that we will use for numeric data with INT_TYPE and 
 
 ---
 
-First, we test a function that adds the values of two variables of the "float" and "intel" data types. The function returns "float" as its return value.
+First, we test a function that sums the values of two variables of the "float" and "intel" data types. The function returns "float" as its return value.
 
 Our second program checks the numbers from 0 to 10 in a loop and prints the result according to their odd and even condition.
 
